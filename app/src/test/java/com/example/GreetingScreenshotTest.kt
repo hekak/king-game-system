@@ -1,0 +1,42 @@
+package com.example
+
+import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.material3.Text
+import androidx.compose.ui.Alignment
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.test.junit4.createComposeRule
+import androidx.compose.ui.test.onRoot
+import com.example.ui.components.MultiplierHeader
+import com.example.ui.theme.SuperAceTheme
+import com.github.takahirom.roborazzi.RobolectricDeviceQualifiers
+import com.github.takahirom.roborazzi.captureRoboImage
+import org.junit.Rule
+import org.junit.Test
+import org.junit.runner.RunWith
+import org.robolectric.RobolectricTestRunner
+import org.robolectric.annotation.Config
+import org.robolectric.annotation.GraphicsMode
+
+@RunWith(RobolectricTestRunner::class)
+@GraphicsMode(GraphicsMode.Mode.NATIVE)
+@Config(qualifiers = RobolectricDeviceQualifiers.Pixel8, sdk = [34])
+class GreetingScreenshotTest {
+
+    @get:Rule val composeTestRule = createComposeRule()
+
+    @Test
+    fun game_header_screenshot() {
+        composeTestRule.setContent {
+            SuperAceTheme {
+                MultiplierHeader(
+                    currentMultiplier = 3,
+                    isFreeGame = false,
+                    bannerText = "COMBO 2 (x3) +24.00 🃏 GOLDEN WILD FLIP!"
+                )
+            }
+        }
+
+        composeTestRule.onRoot().captureRoboImage(filePath = "src/test/screenshots/greeting.png")
+    }
+}

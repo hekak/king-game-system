@@ -1,0 +1,50 @@
+{
+  "version": 1,
+  "lastUpdated": 1726200000000,
+  "appTitle": "Super Ace",
+  "maintenanceMode": false,
+  "maintenanceMessage": "সার্ভার রক্ষণাবেক্ষণ কাজের জন্য সাময়িক বন্ধ আছে। কিছুক্ষণ পর আবার চেষ্টা করুন।",
+  "announcementNotice": "🎉 সুপার এস ক্যাসিনোতে স্বাগতম! প্রতিদিনের ডেইলি মিশন ও বোনাস উপভোগ করুন।",
+  "minAppVersion": 1,
+  "latestApkDownloadUrl": "",
+  "globalWinRatio": 30,
+  "superAceWinRatio": 30,
+  "deadMansBulletWinRatio": 30,
+  "gatesOfOlympusWinRatio": 30,
+  "sweetBonanzaWinRatio": 30,
+  "maxCascadeSteps": 8,
+  "goldenWildChance": 0.25,
+  "bigJokerChance": 0.35,
+  "rtpMultiplierBonus": 1.0,
+  "nagadWallet": "01303347372",
+  "bkashWallet": "01303347372",
+  "rocketWallet": "01303347372",
+  "upayWallet": "01303347372",
+  "minDeposit": 100.0,
+  "maxDeposit": 20000.0,
+  "minWithdraw": 500.0,
+  "maxWithdraw": 25000.0,
+  "agentCommissionPercent": 5.0,
+  "websitePortalUrl": "https://royalslots-bd.com",
+  "isWebAppModeEnabled": false,
+  "customGames": [
+    {
+      "id": "pg_fortune_ox",
+      "name": "Fortune Ox",
+      "provider": "PG Soft",
+      "url": "https://m.pgsoft-games.com/98/index.html",
+      "iconUrl": "",
+      "category": "Slots",
+      "isActive": true
+    },
+    {
+      "id": "pg_mahjong_ways_2",
+      "name": "Mahjong Ways 2",
+      "provider": "PG Soft",
+      "url": "https://m.pgsoft-games.com/65/index.html",
+      "iconUrl": "",
+      "category": "Slots",
+      "isActive": true
+    }
+  ]
+}

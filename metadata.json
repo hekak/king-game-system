@@ -1,0 +1,8 @@
+{
+  "name": "King Game",
+  "description": "King Game - High-security arcade gaming platform and real-time remote Admin console with mandatory mobile OTP verification, 50% guaranteed house profit protection, obfuscated IP/code shields, and cloud deployment guides.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
